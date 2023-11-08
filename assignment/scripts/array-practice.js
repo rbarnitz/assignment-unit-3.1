@@ -69,7 +69,8 @@ console.log('Added an animal to end,', animalArray);
 //      Similar to above, add the `dessert` to the end of your `favoriteFoods`
 //      array. (How can you be 100% certain this worked? 🤔)
 
-favoriteFoods.push('cake');
+let dessert = 'cake'
+favoriteFoods.push(dessert);
 console.log(favoriteFoods);
 
 
@@ -133,6 +134,22 @@ console.log(gems);
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
 
+// Practice: reversed array
+/*
+let reverseGems = []
+while(gems.length > 0) {
+  let lastGem = gems.pop();
+
+reverseGems.push(lastGem);
+
+}
+console.log(reverseGems);
+*/
+
+gems.sort();
+gems.reverse();
+console.log(gems);
+//console.log(gems);
 
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
@@ -143,6 +160,7 @@ console.log(gems);
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
 
+console.log(gems.join(' and '));
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
@@ -151,7 +169,9 @@ console.log(gems);
 //     Now, console.log the new array.
 
 
-
+const colorfulGems = gems.concat(colors);
+console.log(colorfulGems);
+  
 
 // DO NOT MODIFY
 // Used for automated testing
